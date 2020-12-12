@@ -26,7 +26,7 @@ url = "https://submit.sfbb.gr/EligibilityCheck.aspx"
 driver.get(url)
 time.sleep(1)
 
-driver.find_element_by_name("ctl00$cphMain$txtZipCode").send_keys(config.zip_code)
+driver.find_element_by_id("ctl00_cphMain_txtZipCode_I").send_keys(config.zip_code)
 driver.find_element_by_id("ctl00_cphMain_btnCheckZipCode").click()
 time.sleep(1)
 
